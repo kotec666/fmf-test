@@ -1,0 +1,27 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas:
+    "header header header header header"
+    "content none none none content"
+    "footer footer footer footer footer";
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: content;
+}
+
+.item3 {
+    grid-area: 👾;
+}
+
+.item4 {
+    grid-area: footer;
+}
